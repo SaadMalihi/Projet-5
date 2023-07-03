@@ -126,7 +126,7 @@
           activeImage = $(this);
         }
       });
-      let activeTag = $(".tags-bar span.active-tag").data("images-toggle");
+      let activeTag = $(".tags-bar button.active-tag").data("images-toggle");
       let imagesCollection = [];
       if (activeTag === "all") {
         $(".item-column").each(function() {
@@ -165,7 +165,7 @@
           activeImage = $(this);
         }
       });
-      let activeTag = $(".tags-bar span.active-tag").data("images-toggle");
+      let activeTag = $(".tags-bar button.active-tag").data("images-toggle");
       let imagesCollection = [];
       if (activeTag === "all") {
         $(".item-column").each(function() {
@@ -220,7 +220,7 @@
     },
     showItemTags(gallery, position, tags) {
       var tagItems =
-        '<li class="nav-item"><button class="nav-link active active-tag"  data-images-toggle="all">Tous</button></li>';
+        '<li class="nav-item"><button class="nav-link active active-tag"  data-images-toggle="all">Tous</></li>';
       $.each(tags, function(index, value) {
         tagItems += `<li class="nav-item active">
                 <button class="nav-link"  data-images-toggle="${value}">${value}</button></li>`;
